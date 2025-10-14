@@ -1,4 +1,7 @@
+// ! Siempre se necesita usar la url del host, en este caso de nuestro host en la nube:
 const URL = "https://js-pioners-prueba.onrender.com"
+
+// * Ejemplo de registro con host en la nube (render)
 document.addEventListener('DOMContentLoaded', () => {
     const registerForm = document.getElementById('registerForm');
     const loginForm = document.getElementById('loginForm');
