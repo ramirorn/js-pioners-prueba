@@ -1,3 +1,4 @@
+const URL = "https://js-pioners-prueba.onrender.com"
 document.addEventListener('DOMContentLoaded', () => {
     const registerForm = document.getElementById('registerForm');
     const loginForm = document.getElementById('loginForm');
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('registerPassword').value;
         console.log(username, password)
 
-        const res = await fetch('http://localhost:3000/api/auth/register', {
+        const res = await fetch(`${URL}/api/auth/register`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password }),
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const username = document.getElementById('loginUsername').value;
         const password = document.getElementById('loginPassword').value;
 
-        const res = await fetch('http://localhost:3000/api/auth/login', {
+        const res = await fetch(`${URL}/api/auth/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password }),
