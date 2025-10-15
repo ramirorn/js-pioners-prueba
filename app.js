@@ -13,7 +13,7 @@ import { indexRouter } from './src/routes/index.js';
 
 // Cargar variables de entorno
 dotenv.config();
-
+console.log("Este console log es para jose")
 // Conectar a la base de datos
 connectDB();
 
